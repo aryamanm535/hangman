@@ -15,6 +15,8 @@ class hangman
         {
             if(Character.toString(word.charAt(i)).equalsIgnoreCase("A")||Character.toString(word.charAt(i)).equalsIgnoreCase("E")||Character.toString(word.charAt(i)).equalsIgnoreCase("O")||Character.toString(word.charAt(i)).equalsIgnoreCase("U")||Character.toString(word.charAt(i)).equalsIgnoreCase("I"))
                 hang.add("x");
+            else if(Character.toString(word.charAt(i)).equals(" "))
+                hang.add(" ");
             else
                 hang.add("-");
         }
